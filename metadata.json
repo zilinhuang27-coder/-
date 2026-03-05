@@ -1,0 +1,5 @@
+{
+  "name": "Missing Shot Generator",
+  "description": "Generates missing video shots from a report, using product images and AI.",
+  "requestFramePermissions": []
+}

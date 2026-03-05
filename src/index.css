@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F9FAFB] text-zinc-900 antialiased;
+  }
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.card-shadow {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.02), 0 1px 2px -1px rgb(0 0 0 / 0.02);
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:shadow-zinc-200/50 hover:-translate-y-1;
+}
